@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Einfaches Forum</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      textarea {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Einfaches Forum</h1>
+    <textarea
+      id="postContent"
+      placeholder="Schreibe deinen Beitrag hier..."
+      rows="4"
+    ></textarea
+    ><br /><br />
+    <button onclick="newPost()">Beitrag erstellen</button>
+    <h2>Beiträge:</h2>
+    <ul id="postsList"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>
