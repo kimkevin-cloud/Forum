@@ -9,10 +9,9 @@ function loadPosts() {
     posts.forEach((post, index) => {
         const postElement = document.createElement('li');
         postElement.innerHTML = `
-            ${post.content}
-            <br>
-            <textarea id="replyContent${index}" placeholder="Antworte auf diesen Beitrag..."></textarea><br>
-            <button onclick="replyToPost(${index})">Antworten</button>
+            <p>${post.content}</p>
+            <textarea id="replyContent${index}" placeholder="Antworte auf diesen Beitrag..."></textarea>
+            <button class="btn" onclick="replyToPost(${index})">Antworten</button>
             <ul>
                 ${post.replies.map(reply => `<li>${reply}</li>`).join('')}
             </ul>
